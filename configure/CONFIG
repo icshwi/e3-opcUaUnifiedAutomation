@@ -9,12 +9,15 @@ export EPICS_MODULE_TAG:=5590561
 export EPICS_MODULE_SRC_PATH:=$(EPICS_MODULE_NAME)UnifiedAutomation
 ESS_MODULE_MAKEFILE:=$(EPICS_MODULE_NAME).Makefile
 export PROJECT:=$(EPICS_MODULE_NAME)
-export LIBVERSION:=0.0.0
+export LIBVERSION:=0.0.1
 export E3_ENV_NAME:=e3-env
 export UASDK:=/opt/ess/opcUa
 #   SYSTEM = shared libs are in a system location
 #   PROVIDED = shared libs are in $(UASDK_DIR)
 #   INSTALL = shared libs are installed (copied) into this module
-#export UASDK_DEPLOY_MODE:=PROVIDED
+#   Currently, we only support PROVIDED
+#
+
+export UASDK_DEPLOY_MODE:=PROVIDED
 export UASDK_DIR:=$(UASDK)/lib
-#export USR_DEPENDENCIES += uastack
+

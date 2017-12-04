@@ -161,8 +161,11 @@ conf:
 
 epics:
 #	$(QUIET)echo "ASYN=$(M_ASYN)"                       > $(TOP)/$(EPICS_MODULE_SRC_PATH)/configure/RELEASE
-	$(QUIET)echo "EPICS_BASE=$(COMMUNITY_EPICS_BASE)"  >> $(TOP)/$(EPICS_MODULE_SRC_PATH)/configure/RELEASE
-#	$(QUIET)echo "INSTALL_LOCATION=$(M_MODBUS)"         > $(TOP)/$(EPICS_MODULE_SRC_PATH)/configure/CONFIG_SITE	
+	$(QUIET)echo "EPICS_BASE=$(COMMUNITY_EPICS_BASE)"  >> $(TOP)/$(EPICS_MODULE_SRC_PATH)/configure/RELEASE.local
+	$(QUIET)echo "UASDK = /opt/ess/opcUa"               > $(TOP)/$(EPICS_MODULE_SRC_PATH)/configure/CONFIG_SITE
+	$(QUIET)echo "UASDK_DEPLOY_MODE = PROVIDED"        >> $(TOP)/$(EPICS_MODULE_SRC_PATH)/configure/CONFIG_SITE
+	$(QUIET)echo "UASDK_DIR = $(UASDK)/lib"            >> $(TOP)/$(EPICS_MODULE_SRC_PATH)/configure/CONFIG_SITE
+	$(QUIET)echo "INSTALL_LOCATION=$(M_OPCUA)"         >> $(TOP)/$(EPICS_MODULE_SRC_PATH)/configure/CONFIG_SITE 
 	sudo -E bash -c "$(MAKE) -C $(EPICS_MODULE_SRC_PATH)"
 
 epics-clean:
