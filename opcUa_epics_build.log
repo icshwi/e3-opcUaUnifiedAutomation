@@ -1,0 +1,52 @@
+sudo -E bash -c "make -C opcUaUnifiedAutomation"
+make[1]: Entering directory `/home/icssev/e3/e3-opcUaUnifiedAutomation/opcUaUnifiedAutomation'
+make -C ./configure install 
+make[2]: Entering directory `/home/icssev/e3/e3-opcUaUnifiedAutomation/opcUaUnifiedAutomation/configure'
+perl -CSD /epics/bases/base-3.15.5/bin/linux-x86_64/makeMakefile.pl O.linux-x86_64 ../..
+mkdir O.Common
+make -C O.linux-x86_64 -f ../Makefile TOP=../.. \
+    T_A=linux-x86_64 install
+make[3]: Entering directory `/home/icssev/e3/e3-opcUaUnifiedAutomation/opcUaUnifiedAutomation/configure/O.linux-x86_64'
+Installing config file /epics/bases/base-3.15.5/epics-modules/opcua/configure/RELEASE.local
+make[3]: Leaving directory `/home/icssev/e3/e3-opcUaUnifiedAutomation/opcUaUnifiedAutomation/configure/O.linux-x86_64'
+make[2]: Leaving directory `/home/icssev/e3/e3-opcUaUnifiedAutomation/opcUaUnifiedAutomation/configure'
+make -C ./opcUaDevSupApp install 
+make[2]: Entering directory `/home/icssev/e3/e3-opcUaUnifiedAutomation/opcUaUnifiedAutomation/opcUaDevSupApp'
+perl -CSD /epics/bases/base-3.15.5/bin/linux-x86_64/makeMakefile.pl O.linux-x86_64 ../..
+mkdir O.Common
+make -C O.linux-x86_64 -f ../Makefile TOP=../.. \
+    T_A=linux-x86_64 install
+    
+make[3]: Entering directory `/home/icssev/e3/e3-opcUaUnifiedAutomation/opcUaUnifiedAutomation/opcUaDevSupApp/O.linux-x86_64'
+/usr/bin/g++  -D_GNU_SOURCE -D_DEFAULT_SOURCE            -D_X86_64_  -DUNIX  -Dlinux     -O3 -g   -Wall      -mtune=generic     -m64 -fPIC -I. -I../O.Common -I. -I. -I.. -I/epics/bases/base-3.15.5/epics-modules/opcua/include/compiler/gcc -I/epics/bases/base-3.15.5/epics-modules/opcua/include/os/Linux -I/epics/bases/base-3.15.5/epics-modules/opcua/include -I/epics/bases/base-3.15.5/include/compiler/gcc -I/epics/bases/base-3.15.5/include/os/Linux -I/epics/bases/base-3.15.5/include      -I/opt/ess/opcUa/include/uabase  -I/opt/ess/opcUa/include/uaclient  -I/opt/ess/opcUa/include/uapki  -I/opt/ess/opcUa/include/uastack  -I/opt/ess/opcUa/include/xmlparser    -MM -MF devUaSubscription.d  ../devUaSubscription.cpp
+
+/usr/bin/g++  -D_GNU_SOURCE -D_DEFAULT_SOURCE            -D_X86_64_  -DUNIX  -Dlinux     -O3 -g   -Wall      -mtune=generic     -m64 -fPIC -I. -I../O.Common -I. -I. -I.. -I/epics/bases/base-3.15.5/epics-modules/opcua/include/compiler/gcc -I/epics/bases/base-3.15.5/epics-modules/opcua/include/os/Linux -I/epics/bases/base-3.15.5/epics-modules/opcua/include -I/epics/bases/base-3.15.5/include/compiler/gcc -I/epics/bases/base-3.15.5/include/os/Linux -I/epics/bases/base-3.15.5/include      -I/opt/ess/opcUa/include/uabase  -I/opt/ess/opcUa/include/uaclient  -I/opt/ess/opcUa/include/uapki  -I/opt/ess/opcUa/include/uastack  -I/opt/ess/opcUa/include/xmlparser    -MM -MF drvOpcUa.d  ../drvOpcUa.cpp
+
+/usr/bin/gcc  -D_GNU_SOURCE -D_DEFAULT_SOURCE            -D_X86_64_  -DUNIX  -Dlinux     -O3 -g   -Wall      -mtune=generic     -m64 -fPIC -I. -I../O.Common -I. -I. -I.. -I/epics/bases/base-3.15.5/epics-modules/opcua/include/compiler/gcc -I/epics/bases/base-3.15.5/epics-modules/opcua/include/os/Linux -I/epics/bases/base-3.15.5/epics-modules/opcua/include -I/epics/bases/base-3.15.5/include/compiler/gcc -I/epics/bases/base-3.15.5/include/os/Linux -I/epics/bases/base-3.15.5/include      -I/opt/ess/opcUa/include/uabase  -I/opt/ess/opcUa/include/uaclient  -I/opt/ess/opcUa/include/uapki  -I/opt/ess/opcUa/include/uastack  -I/opt/ess/opcUa/include/xmlparser    -MM -MF devOpcUa.d  ../devOpcUa.c
+
+make[3]: Leaving directory `/home/icssev/e3/e3-opcUaUnifiedAutomation/opcUaUnifiedAutomation/opcUaDevSupApp/O.linux-x86_64'
+make[3]: Entering directory `/home/icssev/e3/e3-opcUaUnifiedAutomation/opcUaUnifiedAutomation/opcUaDevSupApp/O.linux-x86_64'
+
+/usr/bin/gcc  -D_GNU_SOURCE -D_DEFAULT_SOURCE            -D_X86_64_  -DUNIX  -Dlinux     -O3 -g   -Wall      -mtune=generic     -m64 -fPIC -I. -I../O.Common -I. -I. -I.. -I/epics/bases/base-3.15.5/epics-modules/opcua/include/compiler/gcc -I/epics/bases/base-3.15.5/epics-modules/opcua/include/os/Linux -I/epics/bases/base-3.15.5/epics-modules/opcua/include -I/epics/bases/base-3.15.5/include/compiler/gcc -I/epics/bases/base-3.15.5/include/os/Linux -I/epics/bases/base-3.15.5/include      -I/opt/ess/opcUa/include/uabase  -I/opt/ess/opcUa/include/uaclient  -I/opt/ess/opcUa/include/uapki  -I/opt/ess/opcUa/include/uastack  -I/opt/ess/opcUa/include/xmlparser    -c ../devOpcUa.c
+
+
+
+/usr/bin/g++  -D_GNU_SOURCE -D_DEFAULT_SOURCE            -D_X86_64_  -DUNIX  -Dlinux     -O3 -g   -Wall      -mtune=generic     -m64 -fPIC -I. -I../O.Common -I. -I. -I.. -I/epics/bases/base-3.15.5/epics-modules/opcua/include/compiler/gcc -I/epics/bases/base-3.15.5/epics-modules/opcua/include/os/Linux -I/epics/bases/base-3.15.5/epics-modules/opcua/include -I/epics/bases/base-3.15.5/include/compiler/gcc -I/epics/bases/base-3.15.5/include/os/Linux -I/epics/bases/base-3.15.5/include      -I/opt/ess/opcUa/include/uabase  -I/opt/ess/opcUa/include/uaclient  -I/opt/ess/opcUa/include/uapki  -I/opt/ess/opcUa/include/uastack  -I/opt/ess/opcUa/include/xmlparser    -c ../drvOpcUa.cpp
+
+
+
+/usr/bin/g++  -D_GNU_SOURCE -D_DEFAULT_SOURCE            -D_X86_64_  -DUNIX  -Dlinux     -O3 -g   -Wall      -mtune=generic     -m64 -fPIC -I. -I../O.Common -I. -I. -I.. -I/epics/bases/base-3.15.5/epics-modules/opcua/include/compiler/gcc -I/epics/bases/base-3.15.5/epics-modules/opcua/include/os/Linux -I/epics/bases/base-3.15.5/epics-modules/opcua/include -I/epics/bases/base-3.15.5/include/compiler/gcc -I/epics/bases/base-3.15.5/include/os/Linux -I/epics/bases/base-3.15.5/include      -I/opt/ess/opcUa/include/uabase  -I/opt/ess/opcUa/include/uaclient  -I/opt/ess/opcUa/include/uapki  -I/opt/ess/opcUa/include/uastack  -I/opt/ess/opcUa/include/xmlparser    -c ../devUaSubscription.cpp
+
+
+
+/usr/bin/ar -rc    libopcUa.a        devOpcUa.o drvOpcUa.o devUaSubscription.o 
+/usr/bin/ranlib libopcUa.a
+
+
+
+/usr/bin/g++ -o libopcUa.so -shared -fPIC -Wl,-hlibopcUa.so -L/epics/bases/base-3.15.5/epics-modules/opcua/lib/linux-x86_64 -L/opt/ess/opcUa/lib -Wl,-rpath,/epics/bases/base-3.15.5/epics-modules/opcua/lib/linux-x86_64 -Wl,-rpath,/opt/ess/opcUa/lib           -rdynamic -m64            devOpcUa.o drvOpcUa.o devUaSubscription.o    -luabase -luaclient -luapki -luastack -lxmlparser  -lboost_regex -lpthread   -lreadline -lm -lrt -ldl -lgcc
+Installing shared library /epics/bases/base-3.15.5/epics-modules/opcua/lib/linux-x86_64/libopcUa.so
+Installing library /epics/bases/base-3.15.5/epics-modules/opcua/lib/linux-x86_64/libopcUa.a
+make[3]: Leaving directory `/home/icssev/e3/e3-opcUaUnifiedAutomation/opcUaUnifiedAutomation/opcUaDevSupApp/O.linux-x86_64'
+make[2]: Leaving directory `/home/icssev/e3/e3-opcUaUnifiedAutomation/opcUaUnifiedAutomation/opcUaDevSupApp'
+make[1]: Leaving directory `/home/icssev/e3/e3-opcUaUnifiedAutomation/opcUaUnifiedAutomation'
