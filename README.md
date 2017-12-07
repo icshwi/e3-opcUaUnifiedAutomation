@@ -1,7 +1,7 @@
 # e3-opcUaUnifiedAutomation
 
 
-* boost_reg and libxml2 should be installaed.
+* boost_reg, boost-devel, and libxml2 should be installaed.
 
 * Unified Automation SDK (Evaluation) should have the following structure :
 
@@ -23,4 +23,5 @@
 It has the mixed libararies (static and shared) in lib, so one can meet many undefined symbols.
 In that case, please tune UASDK_LIBS orders. The defined symbol should be in the last option
 in linker option (Thank you, Ralph!)
+
 
