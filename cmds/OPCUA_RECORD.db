@@ -1,0 +1,30 @@
+record(ai,"REC:HeaterStatus"){
+        field(SCAN,"1 second")
+#        field(SCAN,"I/O Intr")
+#        field(PINI,"YES")
+#        field(TSE, "-2")
+        field(DTYP,"OPCUA")
+#        field(DISS,"INVALID")
+        field(INP,"@4:Demo.BoilerDemo.Boiler1.HeaterStatus")
+#        field(LINR,"SLOPE")
+#        field(ASLO,"0.01")
+#        field(AOFF,"0")
+}
+record(longin,"REC:Temperature"){
+#        field(SCAN,"1 second")
+        field(SCAN,"I/O Intr")
+#        field(PINI,"YES")
+#        field(TSE, "-2")
+        field(DTYP,"OPCUA")
+#        field(DISS,"INVALID")
+        field(INP,"@4:Demo.BoilerDemo.Boiler1.Temperature")
+}
+#record(ai,"REC:rdPwr"){
+#        field(SCAN,"1 second")
+#        field(SCAN,"I/O Intr")
+#        field(TSE, "-2")
+#        field(PINI,"YES")
+#        field(DTYP,"OPCUA")
+#        field(DISS,"INVALID")
+#        field(INP,"@3:BuildingAutomation.AirConditioner_1.PowerConsumption")
+#}
