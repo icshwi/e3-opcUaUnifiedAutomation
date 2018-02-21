@@ -1,0 +1,4 @@
+source /testing/epics/base-3.15.5/require/0.0.0/bin/setE3Env.bash
+
+export LD_LIBRARY_PATH=/home/jhlee/private_gitsrc/opcUaClientSDK/lib:${LD_LIBRARY_PATH}
+

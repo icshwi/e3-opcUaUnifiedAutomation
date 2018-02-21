@@ -1,0 +1,7 @@
+
+# We moved UASDK into CONFIG_MODULE
+#          export to E3/CONFIG_EXPORT
+#
+# export UASDK:=/home/jhlee/private_gitsrc/opcUaClientSDK
+
+

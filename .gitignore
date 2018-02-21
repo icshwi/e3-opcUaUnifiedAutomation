@@ -1,2 +1,11 @@
 *~
 .#*
+*.local
+*~
+\#*
+*-dev
+.cvsignore
+*_old/
+.\#*
+core
+*.list

@@ -1,0 +1,13 @@
+diff --git opcUaDevSupApp/drvOpcUa.h opcUaDevSupApp/drvOpcUa.h
+index 1d48c00..6d1bb8e 100644
+--- opcUaDevSupApp/drvOpcUa.h
++++ opcUaDevSupApp/drvOpcUa.h
+@@ -19,6 +19,8 @@
+ #ifndef __DRVOPCUA_H
+ #define __DRVOPCUA_H
+ 
++#include <string>
++
+ #include <dbCommon.h>
+ #include <epicsTypes.h>
+ #include <epicsTime.h>
