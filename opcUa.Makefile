@@ -40,7 +40,7 @@ UASDK_INCS += xmlparser
 USR_INCLUDES += $(foreach mod, $(UASDK_INCS),  -I$(UASDK)/include/$(mod))
 
 
-UASDK_LIBS += coremodule
+#UASDK_LIBS += coremodule
 UASDK_LIBS += uaclient
 UASDK_LIBS += uabase
 UASDK_LIBS += uapki
